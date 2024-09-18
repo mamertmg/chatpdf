@@ -1,26 +1,53 @@
 {
-  "name": "chatpdf",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.7"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.7"
-  }
+	"name": "chatpdf",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "export NODE_OPTIONS='--max-old-space-size=8192' && next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@aws-sdk/client-s3": "^3.637.0",
+		"@clerk/nextjs": "^5.3.7",
+		"@langchain/community": "^0.2.32",
+		"@langchain/textsplitters": "^0.0.3",
+		"@nanostores/react": "github:ai/react",
+		"@pinecone-database/doc-splitter": "^0.0.1",
+		"@pinecone-database/pinecone": "^3.0.2",
+		"@radix-ui/react-slot": "^1.1.0",
+		"@tanstack/react-query": "^5.53.3",
+		"ai": "^3.3.31",
+		"axios": "^1.7.7",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.1",
+		"firebase": "^10.13.1",
+		"firebase-admin": "^12.5.0",
+		"langchain": "^0.2.17",
+		"lucide-react": "^0.437.0",
+		"md5": "^2.3.0",
+		"next": "14.2.7",
+		"openai": "^4.61.0",
+		"openai-edge": "^1.2.2",
+		"pdf-parse": "^1.1.1",
+		"react": "^18",
+		"react-dom": "^18",
+		"react-dropzone": "^14.2.3",
+		"react-hot-toast": "^2.4.1",
+		"stripe": "^16.11.0",
+		"tailwind-merge": "^2.5.2",
+		"tailwindcss-animate": "^1.0.7"
+	},
+	"devDependencies": {
+		"@types/md5": "^2.3.5",
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"eslint": "^8",
+		"eslint-config-next": "14.2.7",
+		"postcss": "^8",
+		"tailwindcss": "^3.4.1",
+		"typescript": "^5"
+	}
 }
